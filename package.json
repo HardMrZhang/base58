@@ -1,0 +1,26 @@
+{
+  "name": "base58",
+  "version": "1.0.0",
+  "description": "",
+  "main": "test1.js",
+  "dependencies": {
+    "base58-js": "^1.0.0",
+    "base58": "^2.0.1",
+    "base58encoder": "^0.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HardMrZhang/base58.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HardMrZhang/base58/issues"
+  },
+  "homepage": "https://github.com/HardMrZhang/base58#readme"
+}
