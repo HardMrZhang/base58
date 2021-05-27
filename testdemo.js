@@ -74,8 +74,6 @@ function encode(buffer) {
     .join('');
 }
 
-// ToUTF8('6嘎') --->[54, 229, 152, 142]
-// encode(ToUTF8('6嘎')) -- - > 2 QPT7B
 console.log(encode(ToUTF8('0x90608e86B4D352A2E8e649f235E01bD4772E03f7')))
 // string ---> 加密后的字符串
 function decode(string) {
@@ -101,12 +99,12 @@ function decode(string) {
       carry >>= 8;
     }
   }
-  // deal with leading zeros
+
   for (i = 0; string[i] === '1' && i < string.length - 1; i++) bytes.push(0);
   return bytes.reverse();
 }
 
-// [54, 229, 152, 142]
+
 console.log(decode('ovHax8ujvSLtKgsCC5EsmTBWopZ8sUqh6to7vk66Ck7oqdxYz6q1vFL4D'))
 
 // ovHax8ujvSLtKgsCC5EsmTBWopZ8sUqh6to7vk66Ck7oqdxYz6q1vFL4D
